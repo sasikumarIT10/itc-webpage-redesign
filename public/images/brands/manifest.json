@@ -1,0 +1,77 @@
+[
+  {
+    "slug": "sunfeast",
+    "name": "Sunfeast",
+    "image": "/images/brands/sunfeast.jpg"
+  },
+  {
+    "slug": "aashirvaad",
+    "name": "Aashirvaad",
+    "image": "/images/brands/aashirvaad.jpg"
+  },
+  {
+    "slug": "yippee",
+    "name": "Yippee!",
+    "image": "/images/brands/yippee.jpg"
+  },
+  {
+    "slug": "bingo",
+    "name": "Bingo!",
+    "image": "/images/brands/bingo.jpg"
+  },
+  {
+    "slug": "farmlite",
+    "name": "Farmlite",
+    "image": "/images/brands/farmlite.jpg"
+  },
+  {
+    "slug": "moms-magic",
+    "name": "Mom's Magic",
+    "image": "/images/brands/moms-magic.jpg"
+  },
+  {
+    "slug": "candyman",
+    "name": "Candyman",
+    "image": "/images/brands/candyman.jpg"
+  },
+  {
+    "slug": "fiama",
+    "name": "Fiama",
+    "image": "/images/brands/fiama.jpg"
+  },
+  {
+    "slug": "vivel",
+    "name": "Vivel",
+    "image": "/images/brands/vivel.jpg"
+  },
+  {
+    "slug": "engage",
+    "name": "Engage",
+    "image": "/images/brands/engage.jpg"
+  },
+  {
+    "slug": "classmate",
+    "name": "Classmate",
+    "image": "/images/brands/classmate.jpg"
+  },
+  {
+    "slug": "paperkraft",
+    "name": "Paperkraft",
+    "image": "/images/brands/paperkraft.jpg"
+  },
+  {
+    "slug": "nimyle",
+    "name": "Nimyle",
+    "image": "/images/brands/nimyle.jpg"
+  },
+  {
+    "slug": "mangaldeep",
+    "name": "Mangaldeep",
+    "image": "/images/brands/mangaldeep.jpg"
+  },
+  {
+    "slug": "aim",
+    "name": "AIM",
+    "image": "/images/brands/aim.jpg"
+  }
+]
