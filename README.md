@@ -68,17 +68,21 @@ src/
 
 ## Output images
 
-All generated and site images are committed to the repo:
+All generated assets and the **full static website** are in the [`output/`](output/) folder:
 
 | Folder | Contents |
 |--------|----------|
+| **`output/website/`** | Complete static HTML export of all 31 pages |
 | **`output/brands/`** | 15 Python-generated World of Brands product images |
 | **`output/site-images/`** | Hero, logo, news & sustainability photos |
-| **`public/images/brands/`** | Same brand images (used by the `/brands` page) |
 
-See **[output/README.md](output/README.md)** for previews of every brand image.
+See **[output/README.md](output/README.md)** for previews and viewing instructions.
 
-Regenerate with `npm run brands:images` or `python scripts/generate_brand_images.py`.
+```bash
+npm run output:all        # regenerate images + full website export
+npm run export:website    # static HTML only
+npm run brands:images     # images only
+```
 
 ## Scripts
 

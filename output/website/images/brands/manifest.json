@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "sunfeast",
+    "name": "Sunfeast",
+    "publicPath": "/images/brands/sunfeast.jpg",
+    "outputPath": "output/brands/sunfeast.jpg"
+  },
+  {
+    "slug": "aashirvaad",
+    "name": "Aashirvaad",
+    "publicPath": "/images/brands/aashirvaad.jpg",
+    "outputPath": "output/brands/aashirvaad.jpg"
+  },
+  {
+    "slug": "yippee",
+    "name": "Yippee!",
+    "publicPath": "/images/brands/yippee.jpg",
+    "outputPath": "output/brands/yippee.jpg"
+  },
+  {
+    "slug": "bingo",
+    "name": "Bingo!",
+    "publicPath": "/images/brands/bingo.jpg",
+    "outputPath": "output/brands/bingo.jpg"
+  },
+  {
+    "slug": "farmlite",
+    "name": "Farmlite",
+    "publicPath": "/images/brands/farmlite.jpg",
+    "outputPath": "output/brands/farmlite.jpg"
+  },
+  {
+    "slug": "moms-magic",
+    "name": "Mom's Magic",
+    "publicPath": "/images/brands/moms-magic.jpg",
+    "outputPath": "output/brands/moms-magic.jpg"
+  },
+  {
+    "slug": "candyman",
+    "name": "Candyman",
+    "publicPath": "/images/brands/candyman.jpg",
+    "outputPath": "output/brands/candyman.jpg"
+  },
+  {
+    "slug": "fiama",
+    "name": "Fiama",
+    "publicPath": "/images/brands/fiama.jpg",
+    "outputPath": "output/brands/fiama.jpg"
+  },
+  {
+    "slug": "vivel",
+    "name": "Vivel",
+    "publicPath": "/images/brands/vivel.jpg",
+    "outputPath": "output/brands/vivel.jpg"
+  },
+  {
+    "slug": "engage",
+    "name": "Engage",
+    "publicPath": "/images/brands/engage.jpg",
+    "outputPath": "output/brands/engage.jpg"
+  },
+  {
+    "slug": "classmate",
+    "name": "Classmate",
+    "publicPath": "/images/brands/classmate.jpg",
+    "outputPath": "output/brands/classmate.jpg"
+  },
+  {
+    "slug": "paperkraft",
+    "name": "Paperkraft",
+    "publicPath": "/images/brands/paperkraft.jpg",
+    "outputPath": "output/brands/paperkraft.jpg"
+  },
+  {
+    "slug": "nimyle",
+    "name": "Nimyle",
+    "publicPath": "/images/brands/nimyle.jpg",
+    "outputPath": "output/brands/nimyle.jpg"
+  },
+  {
+    "slug": "mangaldeep",
+    "name": "Mangaldeep",
+    "publicPath": "/images/brands/mangaldeep.jpg",
+    "outputPath": "output/brands/mangaldeep.jpg"
+  },
+  {
+    "slug": "aim",
+    "name": "AIM",
+    "publicPath": "/images/brands/aim.jpg",
+    "outputPath": "output/brands/aim.jpg"
+  }
+]
