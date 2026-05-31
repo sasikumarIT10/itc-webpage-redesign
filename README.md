@@ -66,6 +66,20 @@ src/
 └── lib/theme.ts         # Auto dark mode logic
 ```
 
+## Output images
+
+All generated and site images are committed to the repo:
+
+| Folder | Contents |
+|--------|----------|
+| **`output/brands/`** | 15 Python-generated World of Brands product images |
+| **`output/site-images/`** | Hero, logo, news & sustainability photos |
+| **`public/images/brands/`** | Same brand images (used by the `/brands` page) |
+
+See **[output/README.md](output/README.md)** for previews of every brand image.
+
+Regenerate with `npm run brands:images` or `python scripts/generate_brand_images.py`.
+
 ## Scripts
 
 | Command | Description |

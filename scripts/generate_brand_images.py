@@ -11,7 +11,9 @@ except ImportError as exc:
     raise SystemExit("Install Pillow first: pip install pillow") from exc
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "public" / "images" / "brands"
+PUBLIC_BRANDS_DIR = ROOT / "public" / "images" / "brands"
+OUTPUT_BRANDS_DIR = ROOT / "output" / "brands"
+OUTPUT_SITE_DIR = ROOT / "output" / "site-images"
 
 BRANDS = [
     {"slug": "sunfeast", "name": "Sunfeast", "category": "Foods", "primary": "#C2410C", "secondary": "#FDBA74", "product": "Biscuits"},
@@ -81,20 +83,40 @@ def draw_product_card(brand: dict) -> Image.Image:
 
 
 def main() -> None:
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    PUBLIC_BRANDS_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_BRANDS_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_SITE_DIR.mkdir(parents=True, exist_ok=True)
     manifest = []
 
     for brand in BRANDS:
         image = draw_product_card(brand)
         filename = f"{brand['slug']}.jpg"
-        path = OUT_DIR / filename
-        image.save(path, format="JPEG", quality=90, optimize=True)
-        manifest.append({"slug": brand["slug"], "name": brand["name"], "image": f"/images/brands/{filename}"})
-        print(f"Created {path.relative_to(ROOT)}")
 
-    manifest_path = OUT_DIR / "manifest.json"
-    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-    print(f"Wrote {manifest_path.relative_to(ROOT)}")
+        for target_dir in (PUBLIC_BRANDS_DIR, OUTPUT_BRANDS_DIR):
+            path = target_dir / filename
+            image.save(path, format="JPEG", quality=90, optimize=True)
+            print(f"Created {path.relative_to(ROOT)}")
+
+        manifest.append(
+            {
+                "slug": brand["slug"],
+                "name": brand["name"],
+                "publicPath": f"/images/brands/{filename}",
+                "outputPath": f"output/brands/{filename}",
+            }
+        )
+
+    for target_dir in (PUBLIC_BRANDS_DIR, OUTPUT_BRANDS_DIR):
+        manifest_path = target_dir / "manifest.json"
+        manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+        print(f"Wrote {manifest_path.relative_to(ROOT)}")
+
+    site_images = ROOT / "public" / "images"
+    for source in site_images.glob("*"):
+        if source.is_file():
+            destination = OUTPUT_SITE_DIR / source.name
+            destination.write_bytes(source.read_bytes())
+            print(f"Copied {destination.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
