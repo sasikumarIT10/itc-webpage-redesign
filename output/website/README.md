@@ -10,7 +10,7 @@ Open `index.html` in a browser, or serve the folder:
 npx serve output/website
 ```
 
-Then open the URL shown (usually http://localhost:3000).
+Then open the URL shown (usually http://localhost:3003).
 
 ## Pages included
 
@@ -37,7 +37,6 @@ Then open the URL shown (usually http://localhost:3000).
 - `legal/privacy/index.html`
 - `legal/policies/index.html`
 
-## Regenerate
 
 ```bash
 npm run export:website
