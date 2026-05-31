@@ -2,7 +2,7 @@
 
 A complete multi-page prototype for [ITC Limited](https://itcportal.com/), built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS**.
 
-> **Note:** This runs locally at `http://localhost:3000` — it does not replace the live ITC website.
+> **Note:** This runs locally at `http://localhost:3003` — it does not replace the live ITC website.
 
 ## Site map (31 pages)
 
@@ -38,17 +38,17 @@ npm install
 npm run dev
 ```
 
-Open **http://localhost:3000**
+Open **http://localhost:3003**
 
-If you see an old or broken page, another app may be using port 3000. Try **http://localhost:3001** instead, or stop other terminals running `next dev` and run `npm run dev` again.
+If you see an old or broken page, another app may be using port 3000. Try **http://localhost:3003** instead, or stop other terminals running `next dev` and run `npm run dev` again.
 
 ### Troubleshooting “page not showing properly”
 
 1. **Use the dev server** — do not open HTML files from the folder. Run `npm run dev` first.
-2. **Correct URL** — open `http://localhost:3000` (not itcportal.com).
+2. **Correct URL** — open `http://localhost:3003` (not itcportal.com).
 3. **Hard refresh** — press `Ctrl + Shift + R` to clear cached CSS.
 4. **Theme toggle** — click the sun/moon icon in the header if text is hard to read (try Light mode).
-5. **Port conflict** — if terminal says “port 3000 in use”, use the URL it prints (often `http://localhost:3001`).
+5. **Port conflict** — if terminal says “port 3000 in use”, use the URL it prints (often `http://localhost:3003`).
 
 ## Project structure
 
